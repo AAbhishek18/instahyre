@@ -18,6 +18,7 @@ consumed by the front end.
 performance and security. However, only you should use only a web server (the development
 server is fine) and a database, and just incorporate all concepts using these two servers. Do not
 use other servers.
+
 Data to be stored for each user:
 ● Name, Phone Number, Email Address.
 Registration and Profile:
@@ -27,10 +28,12 @@ using. He can optionally add an email address.
 ● A user needs to be logged in to do anything; there is no public access to anything.
 ● You can assume that the user’s phone contacts will be automatically imported into the app’s
 database - you don’t need to implement importing the contacts.
+
 Spam:
 ● A user should be able to mark a number as spam so that other users can identify spammers via
 the global database. Note that the number may or may not belong to any registered user or
 contact - it could be a random number.
+
 Search:
 ● A user can search for a person by name in the global database. Search results display the name,
 phone number and spam likelihood for each result matching that name completely or partially.
@@ -44,6 +47,7 @@ for the same phone number.
 ● Clicking a search result displays all the details for that person along with the spam likelihood. But
 the person’s email is only displayed if the person is a registered user and the user who is
 searching is in the person’s contact list.
+
 Data Population:
 ● For your testing you should write a script or other facility that will populate your database with a
 decent amount of random, sample data
